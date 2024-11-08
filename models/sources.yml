@@ -1,0 +1,6 @@
+version: 2
+
+sources:
+  - name: dbt_arthurblb
+    tables:
+      - name: olist_orders_dataset
