@@ -1,0 +1,24 @@
+
+version: 2
+
+models:
+    - name: stg__products
+      description: "Staging model for order data including it's specificities and status"
+      columns:
+          - name: product_id
+            description: "The primary key for this table"
+            tests:
+                - unique
+                - not_null
+          - name: product_category_name
+          - name: product_name_length
+          - name: product_description_length
+          - name: product_photos_qty
+          - name: product_weight
+            description: "Weight in grams"
+          - name: product_length
+            description: "length in cms"
+          - name: product_height
+            description: "height in cms"
+          - name: product_width
+            description: "width in cms"      
